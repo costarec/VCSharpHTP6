@@ -21,18 +21,18 @@ public class AccountTest
       account1.Debit(withdrawalAmount); // subtract amount from account1
 
       // display balance
-      Console.WriteLine("account1 balance: {account1.Balance:C}");
+      Console.WriteLine($"account1 balance: {account1.Balance:C}");
       Console.WriteLine();
 
       Console.Write("Enter credit amount for account1: ");
       // obtain user input
       decimal creditAmount = decimal.Parse(Console.ReadLine());
 
-      Console.WriteLine("\nadding {creditAmount:C} to account1 balance");
+      Console.WriteLine($"\nadding {creditAmount:C} to account1 balance");
       account1.Credit(creditAmount);
 
       // display balance
-      Console.WriteLine("account1 balance: {account1.Balance:C}");
+      Console.WriteLine($"account1 balance: {account1.Balance:C}");
       Console.WriteLine();
    }
 }
